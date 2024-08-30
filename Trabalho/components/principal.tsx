@@ -38,7 +38,7 @@ export default function Principal() {
 
 
 
-                    <Text style={styles.title}>RAFAEL DA O BOTÃO</Text>
+                    <Text style={styles.title}>Texto modelo</Text>
 
 
                     <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>

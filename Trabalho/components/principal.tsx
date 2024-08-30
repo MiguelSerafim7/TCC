@@ -12,41 +12,38 @@ export default function Principal() {
         if (page === 'principal') {
             return (
 
-                <View style={styles.container}>
-                    <View style={styles.container}>
-                        <View style={styles.header}>
-                            <Text style={styles.headerText}>Folder da marca</Text>
+                <><View style={styles.header}>
+                    <Text style={styles.headerText}>Folder da marca</Text>
+               
+                </View><View style={styles.container}>
+                        <View style={styles.container}>
+                            <View style={styles.content}>
+                            </View>
                         </View>
-                        <View style={styles.content}>
+                        <Text style={styles.text}>Barbearia Franco</Text>
+                        <View style={styles.fotos}>
+                            <Image
+                                source={{ uri: 'https://picsum.photos/200/300' }}
+                                style={{ width: 100, height: 100 }} />
+                            <Image
+                                source={{ uri: 'https://picsum.photos/200/301' }}
+                                style={{ width: 100, height: 100 }} />
+                            <Image
+                                source={{ uri: 'https://picsum.photos/200/302' }}
+                                style={{ width: 100, height: 100 }} />
                         </View>
-                    </View>
-                    <Text style={styles.text}>Barbearia Franco</Text>
-                    <View style={styles.fotos}>
-                    <Image
-                     source={{ uri: 'https://picsum.photos/200/300' }}
-                        style={{ width: 100, height: 100 }}
-                        />
-                     <Image
-                        source={{ uri: 'https://picsum.photos/200/301' }}
-                     style={{ width: 100, height: 100 }}
-                        />
-                     <Image
-                     source={{ uri: 'https://picsum.photos/200/302' }}
-                     style={{ width: 100, height: 100 }}
-                         />
-                    </View>
 
 
 
-                    <Text style={styles.title}>Texto modelo</Text>
+                        <Text style={styles.title}>Texto modelo</Text>
 
 
-                    <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
-                        <Text style={styles.buttonText}>CorteFy</Text>
-                    </TouchableOpacity>
+                        <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
+                            <Text style={styles.buttonText}>CorteFy</Text>
+                        </TouchableOpacity>
 
 
-                </View>
+                    </View></>
 
             );
         } else if (page === 'home') {
@@ -62,7 +59,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#f2f0dd',
         flex: 1,
-
+        marginBottom: 150,
 
     },
     title: {
@@ -107,10 +104,13 @@ const styles = StyleSheet.create({
     header: {
         backgroundColor: 'red',
         padding: 16,
+
+       
     },
     headerText: {
         fontSize: 18,
         fontWeight: 'bold',
+    
     },
     content: {
         flex: 1,

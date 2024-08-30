@@ -14,21 +14,21 @@ export default function App() {
             return (
                 <ImageBackground
 
-                 source={require('./img/Rectangle.png')} // Atualize o caminho da imagem
+                 source={require('./img/fotofundo.png')} // Atualize o caminho da imagem
                 style={styles.backgroundImage} >     
 
 
 
                 <View style={styles.container}>
 
-                <Image style={styles.logo}source={require("./img/logo.png")}/>
+                <Image style={styles.logo}source={require("./img/foto2.png")}/>
                 
 
-                <Text style={styles.title}>Seja bem vindo à...</Text>
+                <Text style={styles.title}></Text>
                                 
 
                 <TouchableOpacity style={styles.button} onPress={() => setPage('sobre')}>
-                    <Text style={styles.buttonText}>CorteFy</Text> 
+                    <Text style={styles.buttonText}>Começar</Text> 
                 </TouchableOpacity>
 
                 
@@ -63,9 +63,12 @@ const styles = StyleSheet.create({
         
     },
     button: {
-        backgroundColor: '#003818',
-        padding: 10,
-        borderRadius: 5,
+        backgroundColor: 'transparent',
+        borderColor: '#fff',
+        borderWidth: 2,
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 4,
         marginBottom: 50, // Margem abaixo do texto superior
         marginTop: 0,
     },
@@ -91,8 +94,8 @@ const styles = StyleSheet.create({
     },
     
     logo: {
-        width: 250, // Largura da imagem
-        height: 250, // Altura da imagem
+        width: 500, // Largura da imagem
+        height: 500, // Altura da imagem
         marginTop: -80, // Margem acima da imagem
         marginBottom: 0,
     },
